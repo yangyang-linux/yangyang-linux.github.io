@@ -8,21 +8,20 @@ header-img: "img/post-bg-email.jpg"
 <html>
 <head>
     <meta charset="utf-8">
-    <title>留言系统</title>
     <script language="javascript" src="js/judgement.js"></script>
 <style>
 .error {color: #FF0000; text-align: left;}  
 </style>
     
-<--保证手机端显示正常-->
+<!--保证手机端显示正常-->
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimun-scale=1.0,maximum-scale=1.0,user-scalable=no">
     
 </head>
 
-<--设置背景色和背景图片-->
-<body background="logo.png" style="background-color:blanchedalmond;">
+<!--设置背景色和背景图片-->
+<body style="background-color:blanchedalmond;">
     
-<div align="center"> 	<h2>某某留言系统</h2> </div> 
+<div align="center"> 	<h2>给阳阳的博客留言</h2> </div> 
     
 <form action="php/send.php" method="post">
     <table border="0" align="center" width="0" cellpadding="10" cellspacing="0">    
@@ -38,36 +37,10 @@ header-img: "img/post-bg-email.jpg"
             <td align="right">手机号码：</td>
             <td><input type="text"  name="phone" id="phone" style="width:90%"  placeholder="前三项请必填一项及以上"></td>
         </tr>
-        <tr>
-            <td align="right">反馈资料：</td>
-            <td><select name="bookSelect" id="bookSelect" size="1" style="width:90%">
-                <option>请选择反馈书籍</option>
-                <option>高等数学A</option>
-                <option>高等数学B</option>
-                <option>线性代数</option>
-                <option>概率论</option>
-                <option>大学物理A</option>
-                <option>大学物理B</option>
-                <option>复变函数</option>
-                <option>电路分析</option>
-                <option>电路原理</option>                
-                <option>物理化学</option>                
-                <option>电子与电工B</option>                
-                <option>电子与电工C</option>                
-                <option>理论力学</option>                
-                <option>材料力学</option>                
-                <option>工程力学</option>                
-                <option>无机化学</option>                
-                <option>有机化学C</option>                
-                <option>金属工艺学</option>                
-                <option>其他</option>                
-                </select>   
-                <a class="error"> *</a>
-            </td>
-        </tr>
+		
         <tr>
             <td align="right">反馈信息：</td>
-            <td> <textarea name="comments" id="comments" rows="8" style="width: 90%"  placeholder="如：第2套题的第8题正确答案应该是A、第18页的第5题答案解析有误、第20页的第18道大题的第二问答案错误，正确答案应该是5等等。"></textarea><a class="error"> *</a></td>
+            <td> <textarea name="comments" id="comments" rows="8" style="width: 90%"  placeholder="如：你想提出的意见或者想法。"></textarea><a class="error"> *</a></td>
         </tr>
         
         <tr>
