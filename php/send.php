@@ -43,7 +43,6 @@ $mail->Subject = "网页收到新留言啦~~";          // 邮件标题
 $mail->Body = "　　用户姓名：".$name2."
 　　QQ号码：".$email2."
 　　手机号码：".$phone2."
-　　反馈资料：".$bookSelect2."
 　　反馈信息：".$comments2;      // 邮件正文
 
 //定义成功或出错弹窗显示的文本信息
