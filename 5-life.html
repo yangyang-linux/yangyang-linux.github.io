@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人网站</title>
+		<style>
+			* { 
+				/* CSS样式重置 */
+				margin:0; 
+				padding:0;
+			}
+
+			body {
+				background:url("other/image/back.jpg") 0 0 repeat;
+				padding:35px 0 0;
+				margin:auto;
+				text-align:center;
+			}
+
+			.ribbon {
+				display:inline-block;
+			}
+
+			.ribbon:after, .ribbon:before {
+				margin-top:0.5em;
+				content: "";
+				float:left;
+				border:1.5em solid #E6E6FA;
+			}
+
+			.ribbon:after {
+				border-right-color:transparent;
+			}
+
+			.ribbon:before {
+				border-left-color:transparent;
+			}
+
+			.ribbon a:link, .ribbon a:visited { 
+				color:#000;
+				text-decoration:none;
+			    float:left;
+			    height:3.5em;
+				overflow:hidden;
+			}
+
+			.ribbon span {
+				background:#E6E6FA;
+				display:inline-block;
+				line-height:3em;
+				padding:0 1em;
+				margin-top:0.5em;
+				position:relative;
+
+				-webkit-transition: background-color 0.2s, margin-top 0.2s; 
+				-moz-transition: background-color 0.2s, margin-top 0.2s;  
+				-ms-transition: background-color 0.2s, margin-top 0.2s; 
+				-o-transition: background-color 0.2s, margin-top 0.2s; 
+				transition: background-color 0.2s, margin-top 0.2s;
+			}
+
+			.ribbon a:hover span {
+				background:#FFD204;
+				margin-top:0;
+			}
+
+			.ribbon span:before {
+				content: "";
+				position:absolute;
+				top:3em;
+				left:0;
+				border-right:0.5em solid #9B8651;
+				border-bottom:0.5em solid #fff;
+			}
+
+			.ribbon span:after {
+				content: "";
+				position:absolute;
+				top:3em;
+				right:0;
+				border-left:0.5em solid #9B8651;
+				border-bottom:0.5em solid #fff;
+			}
+			.bdh{
+				width:900px;
+				height:600px;
+				margin:10px auto;
+				border:1px solid #fff;
+				background: url("other/image/tubiao.jpg");
+				background-size:100% 100%;
+				border-radius: 50% 50%;
+			}
+			.bd{
+				width:400px;
+				height:400px;
+				margin:120px auto;
+				text-align: left;
+				position:relative;	
+			}
+			p{
+				font-family: "隶书";
+				font-size:30px;
+				top:150px;
+			}
+			.footer {
+                height: 40px;
+                line-height: 40px;
+                position: relative;
+                bottom: 0;
+                width: 100%;
+                text-align: center;
+                color: #000;
+                font-family: Arial;
+                font-size: 20px;
+                letter-spacing: 1px;
+            }
+		</style>
+	</head>
+	<body>
+		<div class='ribbon'>
+			<a href='other/introduce.html'><span>个人简介</span></a>
+			<a href='other/photowall.html'><span>个人相册</span></a>
+			<a href='other/music.html'><span>酷音乐吧</span></a>
+			<a href='other/messageboard.html'><span>有事留言</span></a>
+		</div>
+
+		<div class="bdh">
+			<div class="bd">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;我们总羡慕别人的幸福，却常常忽略自己生活中的美好。其实，幸福很平凡也很简单，它就藏在看似琐碎的生活中。幸福的人，并非拿到了世界上最好的东西，而是珍惜了生命中的点点滴滴，<span style="color:red">用感恩的心态看待生活，用乐观的态度闯过磨难。</span></p>
+			</div>
+	    	</div>
+
+	    <div class="footer">
+	    	© XXX 版权所有 
+	    </div>
+	</body>
+</html>
