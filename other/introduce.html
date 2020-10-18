@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<style>
+			body{
+				background:url(image/back.jpg);
+			}
+			.bd{
+				width:500px;
+				height:800px;
+				margin:0 auto;
+				background:url('image/13.jpg');
+				background-size:100% 100%;
+				border-radius: 50px;
+				border:2px solid #000;
+				padding-right: 20px;
+				padding-top:30px;
+				float:center;
+			}
+			.bd1{
+				width:150px;  
+                height: 150px;  
+                background: url("image/1.jpg")no-repeat;
+                background-size:100% 100%;
+                border-radius:75px;
+                border:2px solid #FFFF00;
+				float:right;  
+                -webkit-animation:run 6s linear 0s infinite;/*头像动画*/	
+			}
+			.bd1:hover{  
+                -webkit-animation-play-state:paused; /*当鼠标移动到头像上时动画停止*/ 
+            }  
+			@-webkit-keyframes run{  
+                from{  
+                    -webkit-transform:rotate(0deg);  
+                }  
+                to{  
+                    -webkit-transform:rotate(360deg); /*头像动画360度旋转*/ 
+                }  
+            } 
+            .button{
+        		width: 100px;
+        		height: 30px;
+        		-moz-border-radius: 4px;
+        		-webkit-border-radius: 4px;
+        		border-radius: 4px;
+        		background-color: #008B8B;
+        		font-style:#fff;
+        		float:left; 
+			} 
+			.bd2{
+				width:300px;
+				height:150px;
+				margin-left:20px;
+				text-align: center;
+			}
+			span{
+				font-size:50px; 
+				position:absolute;
+				top:75px;
+				left:570px;
+				font-family: "隶书";
+			}
+			.bd3{
+
+				width:460px;
+				height:600px;
+				margin:20px auto;
+			}
+			.bd3_1{
+				width:230px;
+				height:600px;
+				margin:auto 10px;
+				float:left;
+				font-size:20px;
+				font-family: "楷体";
+				
+			}
+			.bd3_2{
+				width:170px;
+				height:600px;
+				margin:auto 10px;
+				float:right;	
+			}
+			p{
+				margin-left:40px;
+				margin-top:50px;
+				font-size:25px;
+				font-family: "隶书";
+		</style>
+	</head>
+
+	<body>
+		<input class="button" name="Submit " type="submit" value="返回" onclick="javascript:history.back()" /> 
+		<div class="bd">
+			<div class="bd1"></div>
+			<div class="bd2"><span>个人简介</span></div>
+			<div class="bd3">
+				<div class="bd3_1">
+					<td>姓名:</td>
+					<td>鸿鹄</td><br><br>
+					<u></u>
+					<td>性别:</td>
+					<td>男</td><br><br>
+					<td>年龄:</td>
+					<td>20</td><br><br>
+					<td>政治面貌:</td>
+					<td>优秀的共青团员</td><br><br>
+					<td>学历:</td>
+					<td>本科</td><br><br>
+					<td>学校:</td>
+					<td>上兰村皇家帝国理工学院</td><br><br>
+					<td>专业:</td>
+					<td>物联网工程</td><br><br>
+					<td>爱好:</td>
+					<td>学习T^T</td><br><br>
+					<td>职务:</td>
+					<td>会长</td><br><br>
+					<td>竞赛:</td>
+					<td>很菜，还没</td><br><br>
+					<td>邮箱:</td>
+					<td>2985409357@qq.com</td><br><br>
+					<td>QQ:</td>
+					<td>不说</td><br><br>
+					<td>手机号:</td>
+					<td>不说</td>
+				</div>
+
+				<div class="bd3_2">
+					<p>天<br>行<br>健<br>，<br>君<br>子<br>以<br>自<br>强<br>不<br>息<br></p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
