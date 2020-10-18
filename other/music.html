@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>酷音乐吧</title>
+        <link rel="stylesheet" href="css/music.css">
+    </head>
+    <body>
+        <input class="button" name="Submit " type="submit" value="返回" onclick="javascript:history.back()" />
+        <div class="top">酷&nbsp;&nbsp;音&nbsp;&nbsp;乐&nbsp;&nbsp;吧</div>
+        
+        <div class="wrapper">
+            <div id="player">
+                <audio controls id="audio" src="./content/songs/na_ge.mp3">!Audio Not Support :(</audio>
+            </div>
+            <div id="playlist">
+                <ol>
+                    <li>
+                        <a href="javascript:void(0);" data-name="那年初夏">那年初夏 - 任然</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" data-name="过去">过去-于文文</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" data-name="老街">老街-李荣浩</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" data-name="讲真的">讲真的-曾惜</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" data-name="知足">知足-胡夏</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" data-name="安和桥">安和桥-宇西</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" data-name="羞答答的玫瑰静悄悄地开">羞答答的玫瑰静悄悄地开-胡夏</a>
+                    </li>
+                </ol>
+            </div>
+            <!--歌词存放盒-->
+            <div id="lyricWrapper">
+                <div id="lyricContainer"></div>
+            </div>
+        </div>
+        <script src="js/music.js"></script>
+    </body>
+</html>
