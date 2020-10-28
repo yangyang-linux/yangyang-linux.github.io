@@ -107,3 +107,5 @@ friends: [
         href: "https://www.zhihu.com/" 
     }
 ]
+
+pjax:true
