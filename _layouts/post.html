@@ -78,6 +78,9 @@ layout: default
                     </li>
                     {% endif %}
                 </ul>
+				    {% if site.intensedebate_comments %}
+					  {% include intensedebate-comments.html %}
+					{% endif %}
                 <!-- Gitalk评论 start
                 {% if site.gitalk.enable %}
                 <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
@@ -218,6 +221,3 @@ layout: default
     }
 </style>
 {% endif %}
-    {% if site.intensedebate_comments %}
-      {% include intensedebate-comments.html %}
-    {% endif %}
