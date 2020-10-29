@@ -40,6 +40,7 @@ layout: default
                     {% comment %} if page.subtitle {% endcomment %}
                     <h2 class="subheading">{{ page.subtitle }}</h2>
                     {% comment %} endif {% endcomment %}
+					<h2 class="number_of_words">英文：{{ page.content | number_of_words }}词 | 中文：{{ content | strip_html | strip_newlines | split: "" | size }}字</h2>
                     <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
                 </div>
             </div>
@@ -57,6 +58,7 @@ layout: default
                 col-md-10 col-md-offset-1
                 post-container">
 				{{ content }}
+				
                 <hr style="visibility: hidden;">
                 <ul class="pager">
                     {% if page.previous.url %}
