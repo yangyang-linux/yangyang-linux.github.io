@@ -16,8 +16,9 @@ description: "There's a lot of potential in the spring."
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-title">
-            {{ post.title }}		📕<h3>{{ page.content | number_of_words }}词 | {{ content | strip_html | strip_newlines | split: "" | size }}字</h3>
+            {{ post.title }}		
         </h2>
+		<h3>📕 {{ page.content | number_of_words }}词 | {{ content | strip_html | strip_newlines | split: "" | size }}字</h3>
         {% if post.subtitle %}
         <h3 class="post-subtitle">
             {{ post.subtitle }}
