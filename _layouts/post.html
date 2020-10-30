@@ -40,7 +40,7 @@ layout: default
                     {% comment %} if page.subtitle {% endcomment %}
                     <h2 class="subheading">{{ page.subtitle }}</h2>
                     {% comment %} endif {% endcomment %}
-					<h2 class="number_of_words">英文：{{ page.content | number_of_words }}词 | 中文：{{ content | strip_html | strip_newlines | split: "" | size }}字</h2>
+					<h3 class="number_of_words">英文：{{ page.content | number_of_words }}词 | 中文：{{ content | strip_html | strip_newlines | split: "" | size }}字</h3>
                     <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
                 </div>
             </div>
