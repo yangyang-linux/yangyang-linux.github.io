@@ -18,7 +18,7 @@ description: "There's a lot of potential in the spring."
         <h2 class="post-title">
             {{ post.title }}		
         </h2>
-		<h3>📕 {{ page.content | number_of_words }}词 | {{ content | strip_html | strip_newlines | split: "" | size }}字</h3>
+		
         {% if post.subtitle %}
         <h3 class="post-subtitle">
             {{ post.subtitle }}
