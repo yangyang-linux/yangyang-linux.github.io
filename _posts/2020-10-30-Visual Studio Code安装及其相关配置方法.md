@@ -10,7 +10,7 @@ tags:
     - vscode
 ---
 
-# Visual Studio Code安装
+## Visual Studio Code安装
 - 打开“开始”菜单，进入微软商店（Microsoft Store）,在搜索栏输入visual studio code，在打开的页面点击“了解更多”，进入网页选择免费版并下载安装。
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20201030165958119.png#pic_center)
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2020103017000543.png#pic_center)
@@ -28,7 +28,7 @@ tags:
 - 在第四步中的搜索栏中输入encoding，在Files:Encoding下将utf8改为gbk，这样在输出中文时就不会乱码了。
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20201030170444125.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MTEwMjI0,size_16,color_FFFFFF,t_70#pic_center)
 
-# 编译环境mingw64的配置
+## 编译环境mingw64的配置
 - 在浏览器网址栏中输入网址https://lanzous.com/ia5tz7g， 下载到本地，用解压工具将该压缩包解压到C盘或D盘（建议D 盘），打开mingw64/bin，复制地址。
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20201030170529319.png#pic_center)
