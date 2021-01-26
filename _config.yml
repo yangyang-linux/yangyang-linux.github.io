@@ -112,10 +112,3 @@ friends: [
 #博客评论
 intensedebate_comments: true
 
-
-#论坛valine
-new Valine({
-    el: '#vcomments' ,
-    appId: 'HvvYcruryPsiW2egxIpRnlKV-gzGzoHsz',
-    appKey: 'MLKN1tH2RNDMR4e3O9PJgAh5'
-});
