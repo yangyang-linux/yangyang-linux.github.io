@@ -60,15 +60,15 @@ kramdown:
 # Disqus（https://disqus.com/）
 # disqus_username: yangyang-linux
 
-# Gitalk
-gitalk:
-  enable: true    #是否开启Gitalk评论
-  clientID: 9f593b2f9a4f04150c5d                            #生成的clientID
-  clientSecret: ec820c6530b266af353e9d8b4a6110c0e48eedba    #生成的clientSecret
-  repo:  yangyang-linux.github.io    #仓库名称
-  owner: yangyang-linux    #github用户名
-  admin: yangyang-linux
-  distractionFreeMode: true #是否启用类似FB的阴影遮罩
+# Gitalk 暂时不使用了
+# gitalk:
+#  enable: true    #是否开启Gitalk评论
+#  clientID: 9f593b2f9a4f04150c5d                            #生成的clientID
+#  clientSecret: ec820c6530b266af353e9d8b4a6110c0e48eedba    #生成的clientSecret
+#  repo:  yangyang-linux.github.io    #仓库名称
+#  owner: yangyang-linux    #github用户名
+#  admin: yangyang-linux
+#  distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 
 # 统计
@@ -108,4 +108,14 @@ friends: [
     }
 ]
 
+
+#博客评论
 intensedebate_comments: true
+
+
+#论坛valine
+new Valine({
+    el: '#vcomments' ,
+    appId: 'HvvYcruryPsiW2egxIpRnlKV-gzGzoHsz',
+    appKey: 'MLKN1tH2RNDMR4e3O9PJgAh5'
+});
