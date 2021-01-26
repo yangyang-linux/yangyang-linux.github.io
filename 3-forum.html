@@ -88,22 +88,18 @@ header-img: "img/post-bg-forum.jpg"
 </script>
 
 
-<head>
-    ..
-    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-    ...
-</head>
-<body>
-    ...
-    <div id="vcomments"></div>
-    <script>
-        new Valine({
-            el: '#vcomments',
-            appId: 'HvvYcruryPsiW2egxIpRnlKV-gzGzoHsz',
-            appKey: 'MLKN1tH2RNDMR4e3O9PJgAh5'
-        })
-    </script>
-</body>
+<!-- 论坛 -->
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<div id="vcomments"></div>
+   <script>
+    new Valine({
+        el: '#vcomments',
+        appId: 'HvvYcruryPsiW2egxIpRnlKV-gzGzoHsz',
+        appKey: 'MLKN1tH2RNDMR4e3O9PJgAh5'
+    })
+   </script>
+
+
 <!-- 暂时不使用gittalk评论，因为比较慢
 <-- Gitalk 评论 start  ->
 {% if site.gitalk.enable %}
