@@ -14,6 +14,7 @@ tags:
 一、首先要安装好kali虚拟机，在此附上安装的步骤 
 
 https://www.jianshu.com/p/27ca274b70c8
+
 二、安装xshell 。官网下载地址：
 
 [https://www.netsarang.com/zh/free-for-home-school/](https://www.netsarang.com/zh/free-for-home-school/)
