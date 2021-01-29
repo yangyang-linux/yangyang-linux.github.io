@@ -18,11 +18,11 @@ https://www.jianshu.com/p/27ca274b70c8
 
 [https://www.netsarang.com/zh/free-for-home-school/](https://www.netsarang.com/zh/free-for-home-school/)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/UcAE5U1MComRB8GtQJBSr5JZc6UZP9r0RiclYx0au3hXFoqBr3DYXFGyTMblp406Nic7Yhpzfaz3u5E2Udk080Bw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![](https://s3.jpg.cm/2021/01/29/4zsVk.png)
 *************************************************
-![](https://mmbiz.qpic.cn/mmbiz_png/UcAE5U1MComRB8GtQJBSr5JZc6UZP9r0aiccmrVVnVE3Gw92YVNQgQ3jUZC4bdqCUxYNXwnibp1zGuwMc3jmrtLQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![](https://s3.jpg.cm/2021/01/29/4zEke.png)
 **************************************************
-![](https://mmbiz.qpic.cn/mmbiz_png/UcAE5U1MComRB8GtQJBSr5JZc6UZP9r0uGsWSxicicwXbNUIGnQzPuE63RaajpyGnSKriaEyTKibPhFpzqCKic7swpQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![](https://s3.jpg.cm/2021/01/29/4zFyy.png)
 PS：下载完成安装就好
 
 ## 一、允许root用户登录sshd服务
