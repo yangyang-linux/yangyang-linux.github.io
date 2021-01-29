@@ -11,7 +11,9 @@ tags:
 ---
 
 ## 前言
-一、首先要安装好linux虚拟机，在此附上安装的步骤（一位大佬的博客）[https://blog.csdn.net/sunshine1_0/article/details/80839430](https://blog.csdn.net/sunshine1_0/article/details/80839430)
+一、首先要安装好kali虚拟机，在此附上安装的步骤 
+
+https://www.jianshu.com/p/27ca274b70c8
 二、安装xshell 。官网下载地址：
 
 [https://www.netsarang.com/zh/free-for-home-school/](https://www.netsarang.com/zh/free-for-home-school/)
@@ -23,15 +25,25 @@ tags:
 ![](https://mmbiz.qpic.cn/mmbiz_png/UcAE5U1MComRB8GtQJBSr5JZc6UZP9r0uGsWSxicicwXbNUIGnQzPuE63RaajpyGnSKriaEyTKibPhFpzqCKic7swpQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 PS：下载完成安装就好
 
-## 一、NAT模式
-1、检查Linux虚拟机的网络连接模式，确保它是NAT模式。
-![](https://img-blog.csdnimg.cn/20190709173912788.png)
-2、在VMware里，点击菜单栏上的【编辑】-->【虚拟网络编辑器】，打开下方的虚拟网络编辑器。选择VMnet8（NAT模式），取消勾选【使用本地DHCP服务...】（若勾选，会设置动态IP）
-![](https://img-blog.csdnimg.cn/20190709174100219.png)
-3、点击NAT设置
-![](https://img-blog.csdnimg.cn/20190709174151785.png)
-**********************************************
-![](https://img-blog.csdnimg.cn/20190709174214726.png)
-记住上图中的子网IP范围，如上图所示表示虚拟机在192.168.33.0~192.168.33.255范围内。
+## 一、允许root用户登录sshd服务
+vim /etc/ssh/sshd_config
+![4zH2U.png](https://s3.jpg.cm/2021/01/29/4zH2U.png)
 
-注：上图中192.168.33.2为网关地址，192.168.33.255为广播地址，192.168.33.0一般为网段IP，所以0,2,255这三个地址不能设置。
+
+把34行的 "prohibit-password" 改为 "yes" 并把把34行 和39行前的"#"号删掉，改完效果如下图：
+![4ztLO.png](https://s3.jpg.cm/2021/01/29/4ztLO.png)
+
+重启ssh服务：root@192:~# /etc/init.d/ssh restart
+[ ok ] Restarting ssh (via systemctl): ssh.service.
+
+配置sshd服务开机自动启动：root@192:/etc/init.d# update-rc.d ssh enable
+
+## 二、使用xshell连接kali
+
+1、查看kali的ip是多少
+2、配置xshell，输入名称（随便）和主机（ip地址）
+3、配置终端模式
+![](https://pic4.zhimg.com/v2-a6cc6be9ccbfd835ece93762683bb42f_b.jpg)
+4、连接（用户名密码）
+5、点击确定
+![](https://pic1.zhimg.com/v2-4fe66d9236c9af31c1e25664d0c0b668_b.jpg)
