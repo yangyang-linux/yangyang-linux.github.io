@@ -1,0 +1,126 @@
+---
+layout: page
+title: "Friends"
+description: "一个好汉三个帮"
+header-img: "img/tag-bg.jpg"
+---
+
+<style>
+	.friends-container{margin-top:-100px;margin-bottom:30px}.frind-ship img{border-radius:50%}.frind-ship .title img{object-fit:contain;transition:all 1s}.friend-div:hover .title img{transform:rotate(360deg);-ms-transform:rotate(360deg);-moz-transform:rotate(360deg);-webkit-transform:rotate(360deg);-o-transform:rotate(360deg)}.frind-ship{padding:10px 20px}.frind-ship .title{display:flex;align-items:center}.frind-ship .title div{color:#fff;padding-left:10px}.frind-ship .title img{width:100px;height:100px;flex-shrink:0}.frind-ship .title h1{line-height:.8rem;padding-bottom:16px;border-bottom:2px solid #fff}.friend-button{display:flex;justify-content:center;margin-bottom:-27px}.friend-button a{border-radius:40px}.friend-all .tag-post{margin-bottom:30px}.button-caution{background-color:#ff4351;border-color:#ff4351;color:#fff}.button{font-weight:300;font-size:16px;font-family:"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;text-decoration:none;text-align:center;line-height:40px;height:40px;padding:0 40px;margin:0;display:inline-block;appearance:none;cursor:pointer;border:none;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-transition-property:all;transition-property:all;-webkit-transition-duration:.3s;transition-duration:.3s}.title{margin-bottom:0!important}.card{margin:3rem 0 1rem 0!important}.button-glow.button-caution{-webkit-animation-name:glowing-caution;animation-name:glowing-caution}@-webkit-keyframes glowing-caution{from{-webkit-box-shadow:0 0 0 rgba(255,67,81,.3);box-shadow:0 0 0 rgba(255,67,81,.3)}50%{-webkit-box-shadow:0 0 20px rgba(255,67,81,.8);box-shadow:0 0 20px rgba(255,67,81,.8)}to{-webkit-box-shadow:0 0 0 rgba(255,67,81,.3);box-shadow:0 0 0 rgba(255,67,81,.3)}}@keyframes glowing-caution{from{-webkit-box-shadow:0 0 0 rgba(255,67,81,.3);box-shadow:0 0 0 rgba(255,67,81,.3)}50%{-webkit-box-shadow:0 0 20px rgba(255,67,81,.8);box-shadow:0 0 20px rgba(255,67,81,.8)}to{-webkit-box-shadow:0 0 0 rgba(255,67,81,.3);box-shadow:0 0 0 rgba(255,67,81,.3)}}.button-caution:hover{background-color:#ff7680;border-color:#ff7680;color:#fff;text-decoration:none}.frind-card1{background-image:linear-gradient(to right,#4facfe 0,#00f2fe 100%)}.frind-card2{background-image:linear-gradient(135deg,#667eea 0,#764ba2 100%)}.frind-card3{background-image:linear-gradient(to right,#b8cbb8 0,#b8cbb8 0,#b465da 0,#cf6cc9 33%,#ee609c 66%,#ee609c 100%)}.frind-card4{background-image:linear-gradient(to right,#6a11cb 0,#2575fc 100%)}.frind-card5{background-image:linear-gradient(to top,#c471f5 0,#fa71cd 100%)}.frind-card6{background-image:linear-gradient(to top,#48c6ef 0,#6f86d6 100%)}.frind-card7{background-image:linear-gradient(to top,#0ba360 0,#3cba92 100%)}.frind-card8{background-image:linear-gradient(to top,#0c3483 0,#a2b6df 100%,#6b8cce 100%,#a2b6df 100%)}.frind-card9{background-image:linear-gradient(to right,#ff758c 0,#ff7eb3 100%)}.frind-card10{background-image:linear-gradient(to top,#f77062 0,#fe5196 100%)}.friend-introduction{min-height:3rem}article .card{overflow:visible!important}
+</style>
+<main class="content" style="min-height: 595px;">
+	<div class="container friends-container">
+		<article id="friends-link" style="position: relative; height: 2029.3px;">
+			<div class="row tags-posts friends-all">
+				<!-- -->
+				<div class="col s12 m6 l4 friend-div aos-init aos-animate" data-aos="zoom-in-up" >
+					<div class="card frind-card1">
+						<div class="frind-ship">
+							<div class="title">
+								<img src="https://cdn.jsdelivr.net/gh/mobaijun/blog_css_js/image/avatar.jpg" alt="img">
+								<div>
+									<h1 class="friend-name">墨白</h1>
+									<p class="friend-introduction">一个大佬</p>
+								</div>
+							</div>
+							<div class="friend-button">
+								<a href="https://www.mobaijun.com/navigate/" target="_blank" class="button button-glow button-rounded button-caution">访问主页</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- -->
+				<div class="col s12 m6 l4 friend-div aos-init aos-animate" data-aos="zoom-in-up">
+					<div class="card frind-card1">
+						<div class="frind-ship">
+							<div class="title">
+								<img src="https://cdn.jsdelivr.net/gh/mobaijun/blog_css_js/image/avatar.jpg" alt="img">
+								<div>
+									<h1 class="friend-name">墨白</h1>
+									<p class="friend-introduction">一个大佬</p>
+								</div>
+							</div>
+							<div class="friend-button">
+								<a href="https://www.mobaijun.com/navigate/" target="_blank" class="button button-glow button-rounded button-caution">访问主页</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+	</div>
+
+</main>
+
+<script>
+$(function(){$("#friends-link").masonry({itemSelector:".friend-div"})})
+</script>
+
+
+
+
+<!-- Handle Language Change -->
+<script type="text/javascript">
+    // get nodes
+    var $zh = document.querySelector(".zh");
+    var $en = document.querySelector(".en");
+    var $select = document.querySelector("select");
+
+    // bind hashchange event
+    window.addEventListener('hashchange', _render);
+
+    // handle render
+    function _render(){
+        var _hash = window.location.hash;
+        // en
+        if(_hash == "#en"){
+            $select.selectedIndex = 1;
+            $en.style.display = "block";
+            $zh.style.display = "none";
+        // zh by default
+        }else{
+            // not trigger onChange, otherwise cause a loop call.
+            $select.selectedIndex = 0;
+            $zh.style.display = "block";
+            $en.style.display = "none";
+        }
+    }
+
+    // handle select change
+    function onLanChange(index){
+        if(index == 0){
+            window.location.hash = "#zh"
+        }else{
+            window.location.hash = "#en"
+        }
+    }
+
+    // init
+    _render();
+</script>
+
+ <!-- disqus 评论框 start  -->
+{% if site.disqus.enable %}
+
+<div class="comment">
+    <div id="disqus_thread" class="disqus-thread">
+    </div>
+</div>
+<!-- disqus 评论框 end -->
+
+<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = "{{site.disqus.username}}";
+    var disqus_identifier = "{{site.disqus.username}}/{{page.url}}";
+    var disqus_url = "{{site.url}}{{page.url}}";
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<!-- disqus 公共JS代码 end -->
+{% endif %}
+
