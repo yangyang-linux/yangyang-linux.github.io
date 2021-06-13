@@ -8,6 +8,7 @@ header-img: img/post/2.jpg
 catalog: true
 tags:
     - upload-labs
+    - 文件上传
 ---
 
 ## 前言
