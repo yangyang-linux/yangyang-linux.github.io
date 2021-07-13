@@ -86,7 +86,7 @@ layout: default
                 {% if site.featured-tags %}
                 <section>
                     <hr class="hidden-sm hidden-xs">
-                    <h5><a href="{{'/2-tags/' | prepend: site.baseurl }}">FEATURED TAGS</a></h5>
+                    <h5><a href="{{'/3-tags/' | prepend: site.baseurl }}">FEATURED TAGS</a></h5>
                     <div class="tags">
                         {% for tag in site.tags %}
                             {% if tag[1].size > {{site.featured-condition-size}} %}
@@ -98,12 +98,12 @@ layout: default
                     </div>
                 </section>
                 {% endif %}
-
-                <!-- Short About -->
-                <section class="visible-md visible-lg">
-                    <hr><h5><a href="{{'/5-life/' | prepend: site.baseurl }}">ABOUT ME</a></h5>
-					<!--恋爱计时器-->
-			
+				
+				<!--恋爱计时器-->
+				<!--恋爱计时器-->
+				<section>
+					<hr><h5><a href="{{'/6-life/' | prepend: site.baseurl }}">ABOUT ME</a></h5>
+					
 					<div id="lovexhj" style="width: 100%; height: 100%; text-align: center; font-size: 1rem;">
 						<div id="lovexhjImage" style="width: 220px; margin: 0 auto;">
 							<!-- 左边的头像 -->
@@ -145,7 +145,12 @@ layout: default
 						loveSitetime()
 						</script>
 					</div>
-			
+				</section>
+				
+                <!-- Short About -->
+                <section class="visible-md visible-lg">
+                    <hr><h5><a href="{{'/5-about/' | prepend: site.baseurl }}">ABOUT ME</a></h5>
+					
                     <div class="short-about">
                         {% if site.sidebar-avatar %}
                             <a href="{{ site.baseurl }}/4-about">
