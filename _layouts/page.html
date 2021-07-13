@@ -139,8 +139,8 @@ layout: default
 							var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes)
 							var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
 								diffMinutes * minutes) / seconds)
-							<strong>document.getElementById("loveSitetime").innerHTML = "和小李在一起已经：</br>" + diffYears + "年" + diffDays + "天" +
-								diffHours + "时" + diffMinutes + "分" + diffSeconds + "秒啦</br>"</strong>
+							document.getElementById("loveSitetime").innerHTML = "和小李在一起已经：</br>" + diffYears + "年" + diffDays + "天" +
+								diffHours + "时" + diffMinutes + "分" + diffSeconds + "秒啦</br>"
 						}
 						loveSitetime()
 						</script>
