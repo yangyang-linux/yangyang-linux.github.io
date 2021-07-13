@@ -102,6 +102,50 @@ layout: default
                 <!-- Short About -->
                 <section class="visible-md visible-lg">
                     <hr><h5><a href="{{'/5-life/' | prepend: site.baseurl }}">ABOUT ME</a></h5>
+					<!--恋爱计时器-->
+			<ul class="joe_header__slideout-count">
+					<div id="lovexhj" style="width: 100%; height: 100%; text-align: center; font-size: 1rem;">
+					<div id="lovexhjImage" style="width: 220px; margin: 0 auto;">
+					<!-- 左边的头像 -->
+					<img src="https://z3.ax1x.com/2021/07/10/WSZG7R.jpg" alt="love" style="width: 60px; border-radius: 50%;">
+					<!-- 中间的图片 -->
+					<img src="https://cdn.jsdelivr.net/gh/aill66/cdn/love.gif" alt="love" style="width: 60px; border-radius: 50%;">
+					<!-- 右边的头像 -->
+					<img src="https://z3.ax1x.com/2021/07/10/WSZQcF.jpg" alt="love" style="width: 60px; border-radius: 50%;">
+					</div>
+					<p id="loveSitetime" style="font-size: 1.0rem;">和小李在一起已经：<br>0年31天11时38分39秒啦<br></p>
+					<script language="javascript">
+					function loveSitetime() {
+						window.setTimeout("loveSitetime()", 1000);
+						var seconds = 1000
+						var minutes = seconds * 60
+						var hours = minutes * 60
+						var days = hours * 24
+						var years = days * 365
+						var today = new Date()
+						var todayYear = today.getFullYear()
+						var todayMonth = today.getMonth() + 1
+						var todayDate = today.getDate()
+						var todayHour = today.getHours()
+						var todayMinute = today.getMinutes()
+						var todaySecond = today.getSeconds()
+						// 时间设置
+						var t1 = Date.UTC(2021, 06, 13, 22, 51, 21)
+						var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond)
+						var diff = t2 - t1
+						var diffYears = Math.floor(diff / years)
+						var diffDays = Math.floor((diff / days) - diffYears * 365)
+						var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours)
+						var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes)
+						var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+							diffMinutes * minutes) / seconds)
+						document.getElementById("loveSitetime").innerHTML = "在一起已经：</br>" + diffYears + "年" + diffDays + "天" +
+							diffHours + "时" + diffMinutes + "分" + diffSeconds + "秒啦</br>"
+					}
+					loveSitetime()
+					</script>
+					</div>
+			</ul>
                     <div class="short-about">
                         {% if site.sidebar-avatar %}
                             <a href="{{ site.baseurl }}/4-about">
