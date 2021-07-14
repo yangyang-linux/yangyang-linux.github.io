@@ -37,11 +37,11 @@ layout: default
                 {% if site.featured-tags %}
                 <section>
                     <!-- no hr -->
-                    <h5><a href="{{'/2-tags/' | prepend: site.baseurl }}">FEATURED TAGS</a></h5>
+                    <h5><a href="{{'/3-tags/' | prepend: site.baseurl }}">FEATURED TAGS</a></h5>
                     <div class="tags">
         				{% for tag in site.tags %}
                             {% if tag[1].size > {{site.featured-condition-size}} %}
-                				<a href="{{ site.baseurl }}/2-tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">
+                				<a href="{{ site.baseurl }}/3-tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">
                                     {{ tag[0] }}
                                 </a>
                             {% endif %}
@@ -90,7 +90,7 @@ layout: default
                     <div class="tags">
                         {% for tag in site.tags %}
                             {% if tag[1].size > {{site.featured-condition-size}} %}
-                                <a href="{{ site.baseurl }}/2-tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">
+                                <a href="{{ site.baseurl }}/3-tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">
                                     {{ tag[0] }}
                                 </a>
                             {% endif %}
@@ -153,7 +153,7 @@ layout: default
 					
                     <div class="short-about">
                         {% if site.sidebar-avatar %}
-                            <a href="{{ site.baseurl }}/4-about">
+                            <a href="{{ site.baseurl }}/5-about">
                                 <img src="{{site.sidebar-avatar}}"/>
                             </a>
                         {% endif %}
@@ -236,7 +236,7 @@ layout: default
                             
                         </ul>
                         {% if site.email %}
-                            <a href="mailto:1907040714@st.nuc.edu.cn"><p>✉️ {{site.email}}</p></a>
+                            <a href="mailto:1907040714@st.nuc.edu.cn"><p>✉ {{site.email}}</p></a>
                         {% endif %}
                     </div>
                 </section>
