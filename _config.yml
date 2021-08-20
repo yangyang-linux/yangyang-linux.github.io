@@ -108,6 +108,12 @@ friends: [
     }
 ]
 
+# article top
+top: true
+
+
+# top scroll progress
+scroll: true
 
 #博客评论
 intensedebate_comments: true
